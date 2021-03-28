@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+}
+
+.borde{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 5%;
+	border-bottom: 1px solid #ccc;
+}
+
+.logo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
