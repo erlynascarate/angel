@@ -9,7 +9,7 @@ botonMenu.addEventListener('click', ()=>{
 });
 
 contentNav.addEventListener('click', (e)=>{
-	if (e.target != nav){
+	if (e.target != nav && e.target == contentNav){
 		nav.classList.toggle('nav--aparecer');
 		contentNav.classList.toggle('content-nav--aparecer');
 	}
