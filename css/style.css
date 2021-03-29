@@ -1,0 +1,99 @@
+:root{
+	--gris: #ccc;
+	--blanco: #fff;
+	--blanco-opaco: #f2f2f2;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+html{
+	background-color: var(--blanco-opaco);
+}
+
+/*******************
+HEADER
+********************/
+
+.borde{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1% 5%;
+	border-bottom: 1px solid var(--gris);
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	min-width: 190px;
+}
+
+.logo spam{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 25px;
+	cursor: pointer;
+	margin-right: 5%;
+}
+
+.logo h1{
+	color: var(--gris);
+}
+
+/* Menu desplegable */
+.content-nav{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transform: translate(-100%);
+	transition-delay: .3s;
+	background: rgba(0, 0, 0, .4);
+}
+
+.content-nav--aparecer{
+	transform: translate(0);
+	transition-delay: 0s;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 200px;
+	overflow-y: scroll;
+	text-align: center;
+	transform: translate(-100%);
+	transition: .3s .1s;
+	background-color: var(--blanco-opaco);
+}
+
+.nav--aparecer{
+	transform: translate(0);
+}
+
+nav .titulo{
+	padding: 10px;
+	font-size: 20px;
+	border-bottom: 3px solid var(--gris);
+}
+
+nav a{
+	padding: 10px;
+	border-bottom: 1px solid var(--gris);
+}
+
+/*****************
+MAIM
+******************/
