@@ -177,9 +177,10 @@ MAIM
 .perfil-info__cajas{
 	display: flex;
 	justify-content: space-between;
-	padding: 0 0 20px 10px;
+	padding: 0 0 20px 20px;
 }
 
 .perfil-info__cajas .negrita{
+	padding-left: 30px;
 	font-weight: 700;
 }
