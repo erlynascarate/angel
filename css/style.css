@@ -1,13 +1,23 @@
 :root{
-	--gris: #ccc;
 	--blanco: #fff;
 	--blanco-opaco: #f2f2f2;
+	--verde: #1dbf73;
+	--gris-descolorido: #95979d;
+	--gris: #ccc;
+	--gris-opaco: #565151;
+	--negro-descolorido: #404145;/*Para subtitulos*/
 }
 
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body{
+	color: #62646a;
+	background-color: var(--blanco);
+	font-size: 14px;
 	font-family: sans-serif;
 }
 
@@ -15,43 +25,37 @@ a{
 	text-decoration: none;
 }
 
-html{
-	background-color: var(--blanco-opaco);
-}
-
 /*******************
 HEADER
 ********************/
 
-.borde{
+.contenido-header{
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	padding: 1% 5%;
-	border-bottom: 1px solid var(--gris);
+	
+	height: 60px;
+	border-bottom: 3px solid var(--gris);
 }
 
-.logo{
-	display: flex;
-	align-items: center;
-	min-width: 190px;
-}
-
-.logo spam{
+.contenido-header__boton{
+	position: absolute;
 	width: 20px;
 	height: 20px;
 	line-height: 20px;
 	font-size: 25px;
 	cursor: pointer;
-	margin-right: 5%;
+	left: 5%;
+
 }
 
-.logo h1{
-	color: var(--gris);
+.contenido-header__logo h1{
+	color: var(--negro-descolorido);
+	font-weight: 900;
 }
 
 /* Menu desplegable */
-.content-nav{
+.caja-nav{
 	position: fixed;
 	width: 100%;
 	height: 100%;
@@ -62,7 +66,7 @@ HEADER
 	background: rgba(0, 0, 0, .4);
 }
 
-.content-nav--aparecer{
+.caja-nav--aparecer{
 	transform: translate(0);
 	transition-delay: 0s;
 }
@@ -71,29 +75,111 @@ nav{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	width: 200px;
+	width: 220px;
 	overflow-y: scroll;
-	text-align: center;
 	transform: translate(-100%);
 	transition: .3s .1s;
-	background-color: var(--blanco-opaco);
+	box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .5);
+	background-color: var(--blanco);
 }
 
 .nav--aparecer{
 	transform: translate(0);
 }
 
-nav .titulo{
-	padding: 10px;
+.nav__titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px;
 	font-size: 20px;
 	border-bottom: 3px solid var(--gris);
 }
 
-nav a{
-	padding: 10px;
+nav>a{
+	padding: 15px;
 	border-bottom: 1px solid var(--gris);
+}
+
+.nav--espacio{
+	flex-grow: 1;
+}
+
+.nav-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.nav-footer .social-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.nav-footer .social-icons a{
+	margin: 2px 4px;
+	width: 40px;
+}
+
+.nav-footer .social-icons a img{
+	width: 100%;
+}
+
+.nav-footer__descriccion{
+	margin-bottom: 15px;
 }
 
 /*****************
 MAIM
 ******************/
+
+.sobre-mi{
+	padding-top: 60px;
+	width: 85%;
+	max-width: 660px;
+	margin: 0 auto;
+}
+
+.perfil__contactar{
+	text-align: center;
+	border-bottom: 1px solid var(--gris);
+}
+
+.perfil__contactar img{
+	width: 150px;
+	border-radius: 50%;
+}
+
+.perfil__contactar h2 {
+	margin: 10px 0;
+	font-size: 20px;
+	color: #0e0e0f;
+}
+
+.perfil__contactar a{
+	display: block;
+	padding: 10px 16px;
+	margin: 20px 0;
+	color: var(--blanco);
+	background-color: var(--verde);
+	border-radius: 5px;
+}
+
+.perfil-info{
+	margin-top: 20px;
+}
+
+.perfil-info__cajas{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 20px 10px;
+}
+
+.perfil-info__cajas .negrita{
+	font-weight: 700;
+}
