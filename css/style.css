@@ -24,6 +24,7 @@ html{
 
 body{
 	font-size: 1.4rem;
+	transition: 1s ease-in-out;
 }
 
 a{
@@ -38,7 +39,7 @@ HEADER
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 60px;
+	height: 6.0rem;
 	border-bottom: 3px solid var(--gris);
 }
 
@@ -104,7 +105,7 @@ nav{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 60px;
+	min-height: 6.0rem;
 	font-size: 3.85rem;
 	font-weight: 700;
 	color: var(--negro-descolorido);
@@ -305,8 +306,13 @@ FOOTER
 footer{
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	padding: 20px 0;
 	text-align: center;
+}
+
+footer>div{
+	padding: 0 25px;
 }
 
 .footer__descriccion{
@@ -325,13 +331,14 @@ footer{
 
 .footer__social-icons{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .footer__social-icons a{
 	height: 50px;
 	width: 50px;
 	padding: 10px;
+	margin: 0 10px;
 	color: var(--body);
 	border-radius: 50%;
 	transition: .7s ease;

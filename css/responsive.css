@@ -1,0 +1,11 @@
+@media all and (min-width: 480px)
+{
+	html{
+		font-size: 11px;
+	}
+	
+	footer{
+		flex-direction: row;
+		align-items: center;
+	}
+}
