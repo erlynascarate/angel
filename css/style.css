@@ -303,6 +303,10 @@ MAIM
 	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .4);
 }
 
+.conoceme__certificacion{
+	border: none !important;
+}
+
 /*********************
 FOOTER
 **********************/
@@ -313,6 +317,7 @@ footer{
 	justify-content: space-between;
 	padding: 20px 0;
 	text-align: center;
+	border-top: 1px solid var(--gris);
 }
 
 footer>div{
