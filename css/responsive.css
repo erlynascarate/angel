@@ -12,6 +12,38 @@
 
 @media all and (min-width: 660px)
 {
+	.contenido-header{
+		justify-content: space-between;
+		padding: 0 5%
+	}
+	
+	.contenido-header__boton, .nav__titulo, .nav--espacio, .nav-footer{
+		display: none;
+	}
+
+	.caja-nav{
+		position: static;
+		height: auto;
+		width: auto;
+		transform: translate(0);
+		background: none;
+		transition: none;
+	}
+	
+	nav{
+		flex-direction: row;
+		height: auto;
+		width: auto;
+		transform: translate(0);
+		background-color: none;
+		box-shadow: none;
+		transition: none;
+	}
+	
+	nav>a, nav>a:hover{
+		border: none;
+	}
+	
 	.perfil, .conoceme{
 		margin: 50px 0;
 		border-radius: 30px;
