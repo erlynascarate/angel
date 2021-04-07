@@ -34,6 +34,7 @@
 		flex-direction: row;
 		height: auto;
 		width: auto;
+		overflow: none;
 		transform: translate(0);
 		background-color: none;
 		box-shadow: none;
