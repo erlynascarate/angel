@@ -34,9 +34,9 @@
 		flex-direction: row;
 		height: auto;
 		width: auto;
-		overflow: none;
+		overflow: hidden;
 		transform: translate(0);
-		background-color: none;
+		background: none;
 		box-shadow: none;
 		transition: none;
 	}
